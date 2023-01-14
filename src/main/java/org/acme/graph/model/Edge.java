@@ -46,8 +46,8 @@ public class Edge {
 		this.source = source;
 		this.target = target;
 
-		this.source.getInEdges().add(this);
-		this.target.getOutEdges().add(this);
+		this.source.getOutEdges().add(this);
+		this.target.getInEdges().add(this);
 	}
 
 	public String getId() {
